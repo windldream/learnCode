@@ -186,6 +186,7 @@ class MyPromise {
                     count++;
 
                     // 所有状态都成功决议之后promise的状态才会变为fulfilled
+                    // 调用的判断条件(count === list.length)传统上称之为门(gate)
                     if (count === list.length) {
                         resolve(values);
                     }
@@ -197,6 +198,7 @@ class MyPromise {
         });
     }
 
+    // 称之为竟态, 但是更精确的叫法应该是门闩(latch)它的特性可以描述为"只有第一名取胜"
     static race(list) {
         return new MyPromise((resolve, reject) => {
             for (let p of list) {
