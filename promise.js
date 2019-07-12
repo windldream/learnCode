@@ -23,7 +23,7 @@ class MyPromise {
         }
     }
 
-    // 以下都是定义在MyPromise原型上的方法
+    
     _resolve(val) {
         const run = () => {
 
