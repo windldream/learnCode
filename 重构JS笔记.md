@@ -20,6 +20,6 @@
     4.无作为代码(可访问但没有效果)
     5.调试, 日志语句
 
-5.JavaScript中有6个价值: undefined, null, 0, "", NaN和false
+5.JavaScript中有6个假值: undefined, null, 0, "", NaN和false
 
 6.由var或function声明的变量实际上在你声明他们的函数作用域的顶部被初始化为undefined.

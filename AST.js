@@ -30,7 +30,9 @@ let code = 'let sum = (a, b) => a + b;';
 let visitor = {
     ArrowFunctionExpression(path) {
         let params = path.node.params;
+        console.log(params);
         let blockStatement = types.blockStatement([types.returnStatement(path.node.body)]);
+        console.log(blockStatement);
         let func = types.functionExpression(null, params, blockStatement, false, false);
         path.replaceWith(func);
     }
