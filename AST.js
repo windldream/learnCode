@@ -6,7 +6,7 @@ let types = require('babel-types');
 
 let jsOrigin = 'function eat() {};';
 let AST = esprima.parse(jsOrigin);
-console.log(AST);
+console.log('12345', AST);
 
 estraverse.traverse(AST, {
     enter(node) {

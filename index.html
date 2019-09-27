@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+            let str = JSON.stringify({
+                "path": null,
+                "data": [
+                    {
+                        "prizeGrade": 3,
+                        "equityPic": null,
+                        "validStartTime": null,
+                        "prizeType": 2,
+                        "channel": "QD0006",
+                        "equityProdCode": null,
+                        "remark": "埋点自动赠送",
+                        "integralRule": {
+                            "integralRuleId": "member.register",
+                            "integralRuleName": "账号注册t"
+                        },
+                        "activityId": 1001000000000012317,
+                        "accountId": 1168801,
+                        "businessCode": "2019091916243884971",
+                        "couponAccountCode": null,
+                        "equityDesc": "12",
+                        "validEndTime": null,
+                        "prizeName": "积分送啦",
+                        "drawPrizeId": 5292,
+                        "equityName": "账号注册t",
+                        "couponType": null,
+                        "faceValue": null,
+                        "applyRange": null,
+                        "integralQuota": 12,
+                        "department": "领克",
+                        "brand": "569001643002",
+                        "validDays": null
+                    },
+                    {
+                        "prizeGrade": 3,
+                        "equityPic": null,
+                        "validStartTime": null,
+                        "prizeType": 2,
+                        "channel": "QD0006",
+                        "equityProdCode": null,
+                        "remark": "埋点自动赠送",
+                        "integralRule": {
+                            "integralRuleId": "member.register",
+                            "integralRuleName": "账号注册t"
+                        },
+                        "activityId": 1001000000000012317,
+                        "accountId": 1168801,
+                        "businessCode": "2019091916095503284",
+                        "couponAccountCode": null,
+                        "equityDesc": "12",
+                        "validEndTime": null,
+                        "prizeName": "积分送啦",
+                        "drawPrizeId": 5290,
+                        "equityName": "账号注册t",
+                        "couponType": null,
+                        "faceValue": null,
+                        "applyRange": null,
+                        "integralQuota": 12,
+                        "department": "领克",
+                        "brand": "569001643002",
+                        "validDays": null
+                    },
+                    {
+                        "prizeGrade": 2,
+                        "equityPic": "http:\/\/devbj01oss.nttdatadm.com\/20190827\/2019082719414601jinprohongde1125cheng470.png",
+                        "validStartTime": null,
+                        "prizeType": 3,
+                        "channel": "QD0006",
+                        "equityProdCode": null,
+                        "remark": null,
+                        "integralRule": null,
+                        "activityId": 1001000000000012317,
+                        "accountId": 1168801,
+                        "businessCode": "2019091916084102997",
+                        "couponAccountCode": null,
+                        "equityDesc": "12",
+                        "validEndTime": null,
+                        "prizeName": "1212实体礼品",
+                        "drawPrizeId": 5289,
+                        "equityName": null,
+                        "couponType": null,
+                        "faceValue": null,
+                        "applyRange": null,
+                        "integralQuota": null,
+                        "department": null,
+                        "brand": "569001643002",
+                        "validDays": null
+                    },
+                    {
+                        "prizeGrade": 1,
+                        "equityPic": null,
+                        "validStartTime": 1566106248000,
+                        "prizeType": 1,
+                        "channel": "QD0006",
+                        "equityProdCode": "3516021581846975142",
+                        "remark": null,
+                        "integralRule": null,
+                        "activityId": 1001000000000012317,
+                        "accountId": 1168801,
+                        "businessCode": "2019091916031656681",
+                        "couponAccountCode": null,
+                        "equityDesc": "2121212",
+                        "validEndTime": 1572586251000,
+                        "prizeName": "领克礼品券",
+                        "drawPrizeId": 5287,
+                        "equityName": "领克礼品券",
+                        "couponType": "满500送小熊一只",
+                        "faceValue": 15000,
+                        "applyRange": [
+                        ],
+                        "integralQuota": null,
+                        "department": null,
+                        "brand": "569001643002",
+                        "validDays": null
+                    },
+                    {
+                        "prizeGrade": 3,
+                        "equityPic": null,
+                        "validStartTime": null,
+                        "prizeType": 2,
+                        "channel": "QD0006",
+                        "equityProdCode": null,
+                        "remark": "埋点自动赠送",
+                        "integralRule": {
+                            "integralRuleId": "member.register",
+                            "integralRuleName": "账号注册t"
+                        },
+                        "activityId": 1001000000000012317,
+                        "accountId": 1168801,
+                        "businessCode": "2019091916020326608",
+                        "couponAccountCode": null,
+                        "equityDesc": "12",
+                        "validEndTime": null,
+                        "prizeName": "积分送啦",
+                        "drawPrizeId": 5286,
+                        "equityName": "账号注册t",
+                        "couponType": null,
+                        "faceValue": null,
+                        "applyRange": null,
+                        "integralQuota": 12,
+                        "department": "领克",
+                        "brand": "569001643002",
+                        "validDays": null
+                    }
+                ],
+                "error": "maskit.success.general",
+                "message": "maskit.success.general",
+                "status": 200,
+                "timestamp": "1568852744951"
+            })
+            
+            let reg = /"drawPrizeId":\s*(\d+),/g
+            
+            let res = reg.exec(str)
+            debugger
+            console.log(reg, 'drawPrizeId', res[1])
+        }    
+    </script>
+</body>
+</html>
