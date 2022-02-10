@@ -57,7 +57,7 @@
         switch (argCount) {
             case 1: 
                 return (value) => func.call(context, value);
-            case null:
+            case 2:
             case 3:
                 return (value, index, collection) => func.call(context, value, index, collection);
             case 4:

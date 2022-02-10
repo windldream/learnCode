@@ -2304,3 +2304,7 @@ function selectSingleNode(context, expression, namespaces) {
         throw new Error('No XPath engine found.');
     }
 }
+
+
+
+
